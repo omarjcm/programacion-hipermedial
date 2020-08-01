@@ -1,0 +1,24 @@
+#Gest_peli{
+    text-align: center;
+}
+
+#Encabezado{
+    text-align: center;
+}
+
+#Plus{
+    font-size: 25px;
+    text-align: center;
+    color: blue;
+}
+
+table{
+    margin: 150px auto;
+    text-align: center;
+    border-collapse: collapse;
+    width: 600px;
+}
+th, td{
+    border: solid 1px black;
+    padding: 0;
+}

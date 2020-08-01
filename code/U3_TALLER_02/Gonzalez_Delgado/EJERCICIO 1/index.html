@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="tabla.css"/>
+        <title>PELICULAS</title>
+        <script type="text/javascript" src="tem1.js"></script>
+    </head>
+    <body>
+        <fieldset>
+            <div id = "Gest_peli">
+            <h1>Gestión de Películas</h1>
+        </div>
+        <div id = "Encabezado">    
+        <label class = "Titulo_peli">Título:</label>
+        <input type="text" id="titulo"/>
+        <label class = "Boton_buscar"></label>
+        <button onclick="Buscar_peli()">BUSCAR</button>
+        </div>
+        <div id = "Plus">
+            <button>+</button>
+        </div>
+        <div id="main">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Título</th><th>Descripción</th><th>Act.</th><th>Eli.</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <th>Lo que el agua se Llevó</th><th>Se trata de un ratón que cae por un inodoro y tiene aventuras</th>
+                    <button>!</button><button>-</button>
+                </tr>
+            </table>
+        </div>
+
+    </fieldset>
+    </body>
+</html>

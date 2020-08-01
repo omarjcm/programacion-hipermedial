@@ -1,0 +1,25 @@
+.contenedor {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+}
+
+.formulario input {
+    flex-grow: 1;
+    margin: 0 15px;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table td, table th{
+    border: 1px solid #000;
+}

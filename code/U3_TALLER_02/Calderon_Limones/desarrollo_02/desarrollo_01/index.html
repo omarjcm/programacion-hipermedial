@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Examen I Interciclo - Juego</title>
+        <link rel="stylesheet" href="main.css" />
+        <script src="pelicula.js"></script>
+    </head>
+    <body onload="cargarDatosInicial()">
+        <div class="container">
+            <h1>Gestión de Películas</h1>
+            <div class="container-buscar">
+                <label class="item">Título: </label>
+                <input class="item" type="text" id="titulo" value="" />
+                <button class="item" onclick="buscarPelicula()">Buscar</button>
+            </div>
+            <div class="container-agregar">
+                <button>+</button>
+            </div>
+            <div id="peliculas"></div>
+        </div>
+    </body>
+</html>

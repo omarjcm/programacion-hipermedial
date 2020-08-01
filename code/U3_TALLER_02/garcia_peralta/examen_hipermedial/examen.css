@@ -1,0 +1,24 @@
+ .color_fondo{
+    background: rgb(43, 187, 67);
+ }
+ 
+ .color_boton{
+    background: rgb(43, 57, 187);
+ }
+
+ .posicion{
+    
+    
+ }
+
+ .border{
+   
+    float: auto ;
+    border: 1px solid black;
+    
+} 
+
+.general{
+    margin: 10% auto; 
+    width: 30%;
+}

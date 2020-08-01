@@ -1,0 +1,19 @@
+#centro{
+    width: 400 px;
+    margin: 0 px auto;
+    padding: 8 px;
+
+}
+.box {
+    width: 400px;
+	height: 200px;
+	border: 1px solid;
+	padding: 20px;
+	margin: 30px;
+	color:black ;
+}
+#parrafo{
+    width: 150 px;
+    margin: 0 px auto;
+}
+

@@ -1,0 +1,87 @@
+<! DOCTYPE html >
+< html  lang = " es " >
+< cabeza >
+	< meta  charset = " utf-8 " />
+	< título > examen </ título >
+    < link  rel = " stylesheet " type = " text / css " href = " tema1.css " />
+</ cabeza >
+< cuerpo >        
+            < div  id = " center " >
+                < p  id = " parraf " > Gestion de Pelicula </ p >
+            </ div >        
+</ cuerpo >     
+	< cabeza >
+< style  type = " text / css " >
+tabla ,  th , td {
+    borde : 1 px negro sólido;
+    colapso del borde : colapso;
+}
+</ estilo >
+    </ cabeza >
+	< nav >
+	</ nav >
+	< sección >
+		< formulario >
+            < div  class = " box " >
+        	< label  id = " Titulo " > Titulo: </ label >
+            < input  type = " Titulo " name = " Titulo " />
+            < button  type = " Buscar " > Buscar </ button >
+            < Botón  tipo = " + " > + </ botón > < br > < br >
+
+            < table  style = " width: 40%; " >
+                < tr >
+                    < td > Título </ td >
+                    < td > Descripcion </ td >
+                    < td > Actualizar </ td >
+                    < td > Eliminar </ td >
+                </ tr >
+                < tr >
+                    < td > Lo que mas odio de ti </ td >
+                    < td > adolescentes enamorados .... </ td >
+                    < td > < button  type = " act " > act </ button > </ td >
+                    < td > < button  type = " Eliminar " >   eliminar </ button > </ td >
+                </ tr >
+                < tr >
+                    < td > Sharktales </ td >
+                    < td > Caricatura </ td >
+                    < td > < button  type = " act " > act </ button > </ td >
+                    < td > < button  type = " Eliminar " > eliminar </ button > </ td >
+                </ tr >
+                < tr >
+                    < td > Iron man </ td >
+                    < td > Playboy multimillonario ... </ td >
+                    < td > < button  type = " act " > act </ button > </ td >
+                    < td > < button  type = " Eliminar " > eliminar </ button > </ td >
+                </ tr >
+            </ table >
+        </ div >
+			
+	</ sección >
+    <a un lado>
+	</ aparte >
+	< pie de página >
+	</ pie de página >
+</ cuerpo >
+</ html >
+
+
+-------------------------
+
+. caja {
+    ancho : 400 px ;
+	altura : 200 px ;
+	borde : 1 px sólido;
+	relleno : 20 px ;
+	margen : 30 px ;
+	color : negro
+}
+# center {
+    ancho : 400 px;
+    margen : 0 px automático;
+    relleno : 8 px;
+
+}
+# parraf {
+    ancho : 150 px;
+    margen : 0 px automático;
+}

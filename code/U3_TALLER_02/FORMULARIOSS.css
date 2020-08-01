@@ -1,0 +1,70 @@
+*{
+	font-family:verdana;
+}
+
+#phone {
+	color: black;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#name {
+	color: black;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#email {
+	color: black;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#website {
+	color: black;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#bd {
+	color: black;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#quantity {
+	color: black;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#gsearch {
+	color: black;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+label{
+	width:200px;
+	padding: 0 10px 0 10px;
+	text-align:right;
+	color: black;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.form-personal-information{
+	display:grid;
+	grid-template-rows:1fr 3fr;
+}	
+.form-personal-text{
+	grid-row:1;
+}
+.form-personal{
+   grid-row: 2;
+}
+.COLOR{
+	width:600px;
+	height: 500px;
+	border:2px ;
+	padding: 30px ;
+	margin: 40px;
+	
+background-color: crimson;
+}
+.wrap{
+	flex-wrap: [4];
+	margin: auto;
+    width: 60%;
+	border: 5px solid black;
+	padding: 20px;
+	
+}
+#subm{
+	background-color: rgb(180, 241, 11);
+}

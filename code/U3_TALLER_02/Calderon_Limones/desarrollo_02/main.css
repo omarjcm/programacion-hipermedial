@@ -1,0 +1,39 @@
+.container {
+    width: 500px;
+    height: auto;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.container .container-form {
+    width: 500px;
+    border: 1px dotted black;
+    padding: 20px;
+}
+
+.container .container-buscar {
+    margin: 5px;
+}
+
+.container .container-buscar label {    
+}
+
+table {
+    border: 1px solid lightgray;
+    margin: 10px;
+}
+
+table th, td {
+    border: 1px solid lightgray;
+}
+
+table th {
+    background-color: lightgray;
+}

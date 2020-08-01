@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Examen I Interciclo - Desarrollo</title>
+        <link rel="stylesheet" href="main.css" />
+        <script src="pelicula.js"></script>
+    </head>
+    <body onload="cargarDatosInicial()">
+        <div class="container">
+            <div class="container-form">
+                <h1>Película</h1>
+                <div class="container-buscar">
+                    <label class="item">Título: </label>
+                    <input class="item" type="text" id="titulo" value="" />
+                </div>
+                <div class="container-buscar">
+                    <label class="item">Descripción: </label>
+                    <input class="item" type="text" id="descripcion" value="" />
+                </div>
+                <div class="container-buscar">
+                    <label class="item">Género: </label>
+                    <input class="item" type="text" id="genero" value="" />
+                </div>
+                <div class="container-agregar">
+                    <button onclick="agregarPelicula()">Guardar</button>
+                </div>
+            </div>
+            <div id="peliculas"></div>
+        </div>
+    </body>
+</html>

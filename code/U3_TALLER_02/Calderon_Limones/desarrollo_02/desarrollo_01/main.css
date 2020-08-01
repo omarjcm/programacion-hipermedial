@@ -1,0 +1,46 @@
+.container {
+    width: 500px;
+    height: auto;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 1px dotted black;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.container-agregar {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.container-agregar button {
+    margin: 10px;
+}
+
+.btn {
+    text-align: center;
+}
+
+table {
+    border: 1px solid lightgray;
+    margin: 10px;
+}
+
+table th, td {
+    border: 1px solid lightgray;
+}
+
+table th {
+    background-color: lightgray;
+}
+
+button {
+    background-color: rgba(0, 3, 156, 0.822);
+    color: cornsilk;
+}

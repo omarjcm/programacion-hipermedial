@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html >
+<head lang="es">
+	<meta charset="utf-8" />
+	<title>EXAMEN</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="viewport" content="" />
+    <meta name="author" content="GOYES - OCHOA" />
+    <link rel="stylesheet" type="text/css" href="eexamenparte2.css" />
+
+    <script>
+        function presentar(){
+            var titulo = document.getElementById('titulo');
+            var description = document.getElementById('description');
+            var genero = document.getElementById('genero');
+
+            alert(`Esta es tu pelicula: ${titulo.value} ${description.value} ${genero.value}`)
+
+        }
+
+        $(document).ready(function() {
+//obtenemos el valor de los input
+
+$('#presentarpeli').click(function() {
+  var titulo = document.getElementById("titulo").value;
+  var description = document.getElementById("description").value;
+  var genero = document.getElementById("genero").value;
+  var i = 1; //contador para asignar id al boton que borrara la fila
+  var fila = '<tr id="row' + i + '"><td>' + titulo + '</td><td>' + description + '</td><td>' + genero + '</td>' 
+  i++;
+
+  $('#mytable tr:first').after(fila);
+    var nFilas = $("#mytable tr").length;
+    document.getElementById("apellido").value ="";
+    document.getElementById("cedula").value = "";
+    document.getElementById("nombre").value = "";
+    document.getElementById("nombre").focus();
+
+  });
+});
+
+    </script>
+    
+</head>
+<body>
+    
+    <header>
+        <div class ="box">
+            <h1>Pelicula</h1>
+            <p></p><label>Titulo</label>
+            <input type="text" id="titulo"/></p>
+            <p></p><label>Description</label>
+            <input type="text" id="description"/></p>
+            <p></p><label>Genero</label>
+            <input type="text" id="genero"/></p>
+		<p><button onclick= "presentar()" id= "presentarpeli" type="submit"> GUARDAR </button></p>
+        </div>
+    </header>
+
+    <header>
+        <table  id="mytable" class="table table-bordered table-hover ">
+            <tr>
+              <th>Titulo</th>
+              <th>Description</th>
+              <th>Genero</th>
+            </tr>
+          </table>
+    </header>
+
+</body>
+</html>

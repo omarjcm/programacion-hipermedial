@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Examen</title>
+
+        <link rel="stylesheet" href="estilos.css" />
+        <script src="javascript.js"></script>
+    </head>
+    <body onload="iniciar()">
+        <div class="contenedor">
+            <form onsubmit="return buscarPeliculas(event)">
+                <h1>Gestión de Películas</h1>
+                <div class="formulario">
+                    <label for="input">Titúlo: </label>
+                    <input type="text" id="filtro" />
+                    <button type="submit">Buscar</button>
+                </div>
+            </form>
+            <table cellspacing=0>
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Descripción</th>
+                        <th>Act.</th>
+                        <th>Eli.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

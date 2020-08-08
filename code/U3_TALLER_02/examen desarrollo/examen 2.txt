@@ -1,0 +1,161 @@
+  
+<! DOCTYPE html >
+< html  lang = " en " >
+
+< cabeza >
+    <! - Metaetiquetas requeridas ->
+    < meta  charset = " utf-8 " />
+    < meta  name = " viewport " content = " width = device-width, initial-scale = 1, shrink-to-fit = no " />
+
+    <! - Bootstrap CSS ->
+    < Enlace  rel = " hoja de estilo " href =" https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css " integridad =" sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc + NcPb1dKGj7Sk " crossorigin =" anónimo " />
+
+    < título > Hola, mundo! </ title >
+</ cabeza >
+
+< cuerpo >
+    < div  class = " pt-2 mt-2 bg-danger text-white rounded-0 justify-content-center " >
+        < div  class = " contenedor d-flex justify-content-center " >
+            < hr  class = " my-1 " />
+            < h1  class = " display-3 " > < strong > EXAMEN </ strong > </ h1 >
+            < hr  class = " my-1 " />
+        </ div >
+    </ div >
+
+    < section  class = " contenedor mt-5 pt-5 " >
+        < div  class = " tarjeta-baraja text-truncate " >
+            < div  class = " centro de tarjeta " >
+                < h1  class = " text-center " > PELÍCULA </ h1 >
+
+                < div  class = " card-body " >
+                    < formulario >
+                        < div  class = " form-group row " >
+                            < label  for = " titulo " class = " col-sm-2 col-form-label " > Título </ label
+                >
+                < div  class = " col-sm-10 " >
+                  < entrada
+                    type = " Titulo "
+                    clase = " control de formulario "
+                    id = " titulo "
+                    marcador de posición = " Ingresa el titulo "
+                  />
+                </ div >
+              </ div >
+              < div  class = " form-group row " >
+                < label  for = " descripcion " class = " col-sm-2 col-form-label "
+                  > Descripción </ etiqueta
+                >
+                < div  class = " col-sm-10 " >
+                  < entrada
+                    type = " Descripcion "
+                    clase = " control de formulario "
+                    id = " descripcion "
+                    placeholder = " Ingresa descripcion "
+                  />
+                </ div >
+              </ div >
+              < div  class = " form-group row " >
+                < label  for = " genero " class = " col-sm-2 col-form-label "
+                  > Género </ label
+                >
+                < div  class = " col-sm-10 " >
+                  < entrada
+                    type = " Genero "
+                    clase = " control de formulario "
+                    id = " genero "
+                    placeholder = " Ingresar genero "
+                  />
+                </ div >
+              </ div >
+              < div  class = " col text-center " >
+                < a
+                  clase = " btn btn-primary "
+                  id = " btnPelicula "
+                  href = " # "
+                  rol = " botón "
+                  > Guardar </ a
+                >
+              </ div >
+            </ form >
+          </ div >
+        </ div >
+      </ div >
+    </ sección >
+
+    < div  class = " container mt-12 " >
+      < table  class = " table " >
+        < thead  class = " thead-dark " >
+          < tr >
+            < th  scope = " col " > Nº </ th >
+            < th  scope = " col " > Título </ th >
+            < th  scope = " col " > Descripción </ th >
+            < th  scope = " col " > Género </ th >
+          </ tr >
+        </ thead >
+        < tbody  class = " tareas " >
+          < tr  class = " list " id = " list " >
+            < th  scope = " row " > 1 </ th >
+            < Td > < un  href = "" > </ una > Marcos </ td >
+            < Td > < un  href = "" > </ una > Otto </ td >
+            < Td > < un  href = "" > </ una > @mdo </ td >
+          </ tr >
+        </ tbody >
+      </ table >
+    </ div >
+  </ cuerpo >
+</ html >
+
+-------------
+( función ( )  {
+    
+    var  lista  =  documento . getElementById ( "lista" ) ,
+        titulo  =  documento . getElementById ( "título" ) ,
+        descripcion  =  documento . getElementById ( "descripción" ) ,
+        genero  =  documento . getElementById ( "género" ) ,
+        btnPelicula  =  documento . getElementById ( "btn-add" ) ;
+
+    
+    var  agregarTarea  =  function ( )  {
+        var  tarea  =  título . valor ,
+            nuevaTarea  =  documento . createElement ( "lista" ) ,
+            enlace  =  documento . createElement ( "a" ) ,
+            contenido  =  documento . createTextNode ( tarea ) ;
+
+        if  ( tarea  ===  "" )  {
+            título . setAttribute ( "marcador de posición" ,  "" ) ;
+            título . className  =  "error" ;
+            devuelve  falso ;
+        }
+
+        
+        enlace . appendChild ( contenido ) ;
+        enlace . setAttribute ( "href" ,  "#" ) ;
+        nuevaTarea . appendChild ( enlace ) ;
+        lista . appendChild ( nuevaTarea ) ;
+
+        título . valor  =  "" ;
+
+        for  ( var  i  =  0 ;  i <= lista . children . length  -  1 ;  i ++ )  {
+            lista . niños [ i ] . addEventListener ( "click" ,  function ( )  {
+                esta . parentNode . removeChild ( esto ) ;
+            } ) ;
+        }
+
+    } ;
+    var  comprobarInput  =  function ( )  {
+        título . className  =  "" ;
+        título . setAttribute ( "marcador de posición" ,  "Agrega tu peli" ) ;
+    } ;
+
+    var  eleminarTarea  =  function ( )  {
+        esta . parentNode . removeChild ( esto ) ;
+    } ;
+
+    btnPeli . addEventListener ( "clic" ,  agregarTarea ) ;
+
+    titulo . addEventListener ( "clic" ,  comprobarInput ) ;
+
+    for  ( var  i  =  0 ;  i <= lista . children . length  -  1 ;  i ++ )  {
+        lista . niños [ i ] . addEventListener ( "clic" ,  eleminarTarea ) ;
+    }
+} ( ) ) ;

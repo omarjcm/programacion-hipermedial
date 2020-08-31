@@ -1,0 +1,121 @@
+Anabel Rocafuerte Escalante.
+examen.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Examen :(</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" type="text/css" href="examen.js" />
+</head>
+
+<body>
+    <h1>Ejemplo con javascript</h1>
+    <p>
+    <label>Titulo: </label>
+    <input type="text" id="titulo" />
+    </p>
+    <p>
+    <label>Descripción: </label>
+    <input type="text" id="descripcion" />
+    </p>
+    <p>
+    <label>Género: </label>
+    <input type="text" id="genero" />  
+    </p>
+    <button onclick="genera_tabla()">Guardar</button>
+
+    <div id="datos"></div>
+    <div id="dato1"></div>
+    <div id="dato2"></div>
+    <p>
+    <div>
+        <table border = 3>
+            <tr>
+                <td>Titulo</td>
+                <td>Descripción</td>
+                <td>Género</td>
+            </tr>
+    </div>
+    </p>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Examen I Interciclo - Desarrollo</title>
+        <link rel="stylesheet" href="main.css" />
+        <script src="pelicula.js"></script>
+    </head>
+    <body onload="cargarDatosInicial()">
+        <div class="container">
+            <div class="container-form">
+                <h1>Película</h1>
+                <div class="container-buscar">
+                    <label class="item">Título: </label>
+                    <input class="item" type="text" id="titulo" value="" />
+                </div>
+                <div class="container-buscar">
+                    <label class="item">Descripción: </label>
+                    <input class="item" type="text" id="descripcion" value="" />
+                </div>
+                <div class="container-buscar">
+                    <label class="item">Género: </label>
+                    <input class="item" type="text" id="genero" value="" />
+                </div>
+                <div class="container-agregar">
+                    <button onclick="agregarPelicula()">Guardar</button>
+                </div>
+            </div>
+            <div id="peliculas"></div>
+        </div>
+    </body>
+</html>
+
+
+
+class Pelicula {
+    constructor(titulo, descripcion, genero) {
+        this.titulo = titulo
+        this.descripcion = descripcion
+        this.genero = genero
+    }
+}
+
+var peliculas = []
+
+function inicializarContainer( elemento ) {
+    while (elemento.firstChild) { 
+        elemento.removeChild( elemento.firstChild ) 
+    }
+}
+
+function cargarDatosInicial() {
+    cargarDatos( peliculas )
+}
+
+function cargarDatos( objetos ) {
+    datos = document.getElementById('peliculas')
+    inicializarContainer( datos )
+
+    datos_tabla = '<table>'
+    datos_tabla += '<tr><th>Título</th><th>Descripción</th><th>Género</th></tr>'
+    for (pelicula of objetos) {
+        datos_tabla += '<tr><td>'+pelicula.titulo+'</td><td>'+pelicula.descripcion+'</td><td>'+pelicula.genero+'</td></tr>'
+    }
+    datos_tabla += '</table>'
+    datos.innerHTML = datos_tabla
+}
+
+function agregarPelicula() {
+    let titulo = document.getElementById('titulo').value
+    let descripcion = document.getElementById('descripcion').value
+    let genero = document.getElementById('genero').value
+
+    peliculas.push( new Pelicula( titulo, descripcion, genero ) )
+    cargarDatos( peliculas )
+}
